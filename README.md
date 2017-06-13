@@ -19,3 +19,23 @@ Sensor should work.
 Requires mongoose ( https://docs.cesanta.com/mongoose/master/ ) which has its own license.
 
 Must run from an account with read/write access to SPI bus.
+
+Example results follows:
+
+# curl -v -X GET -H "Accept: application/json" pine64-2:8000/sensor
+* Hostname was NOT found in DNS cache
+*   Trying 192.168.7.98...
+* Connected to pine64-2 (192.168.7.98) port 8000 (#0)
+> GET /sensor HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: pine64-2:8000
+> Accept: application/json
+>
+< HTTP/1.1 200 OK
+* Server Mongoose/6.7 is not blacklisted
+< Server: Mongoose/6.7
+< Content-Encoding: application/json
+< Content-Length: 33
+<
+[ {"Temperature:","24.410547"} ]
+
