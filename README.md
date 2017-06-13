@@ -22,6 +22,7 @@ Must run from an account with read/write access to SPI bus.
 
 Example results follows:
 
+```
 # curl -v -X GET -H "Accept: application/json" pine64-2:8000/sensor
 * Hostname was NOT found in DNS cache
 *   Trying 192.168.7.98...
@@ -38,4 +39,4 @@ Example results follows:
 < Content-Length: 33
 <
 [ {"Temperature:","24.410547"} ]
-
+```
