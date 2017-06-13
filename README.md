@@ -7,9 +7,9 @@ power and network connection and assume a well equiped parts bin. Develop a
 hardware and software solution to integrate the temperature in the garage on a
 web page.
 
-I built a simple REST server to sample devices on the SPI bus using mongoose as
-the embedded web server.  The sample hardware is a pine64 ARM development board
-but the code should work on any Raspberry PI or clone.
+I built a simple REST server to sample devices on the SPI or I2C bus using
+mongoose as the embedded web server.  The sample hardware is a pine64 ARM
+development board but the code should work on any Raspberry PI or clone.
 
 The only sensor currently supported is the
 http://wiki.pine64.org/index.php/POT#I2C_Device:_Humidity_and_Temperature_Sensor_.28PMSDP01.29
